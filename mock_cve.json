@@ -1,0 +1,162 @@
+{
+  "CVE-2021-44228": {
+    "package": "log4j-core",
+    "severity": "CRITICAL",
+    "description": "Log4Shell - Remote code execution via JNDI injection in Log4j",
+    "cvss_score": 10.0,
+    "ecosystem": "Maven/Java",
+    "category": "Dependency-chain explosion"
+  },
+  "CVE-2021-45046": {
+    "package": "log4j-core",
+    "severity": "CRITICAL",
+    "description": "Log4j follow-up bypass - Incomplete fix for CVE-2021-44228",
+    "cvss_score": 9.0,
+    "ecosystem": "Maven/Java",
+    "category": "Dependency-chain explosion"
+  },
+  "CVE-2021-45105": {
+    "package": "log4j-core",
+    "severity": "HIGH",
+    "description": "Log4j DoS variant - Uncontrolled recursion in Context Lookup",
+    "cvss_score": 7.5,
+    "ecosystem": "Maven/Java",
+    "category": "Dependency-chain explosion"
+  },
+  "CVE-2018-16487": {
+    "package": "lodash",
+    "severity": "HIGH",
+    "description": "Prototype pollution vulnerability in lodash",
+    "cvss_score": 8.1,
+    "ecosystem": "npm/JavaScript",
+    "category": "Transitive impact"
+  },
+  "CVE-2020-8203": {
+    "package": "lodash",
+    "severity": "HIGH",
+    "description": "Command injection via prototype pollution in lodash",
+    "cvss_score": 7.4,
+    "ecosystem": "npm/JavaScript",
+    "category": "Transitive impact"
+  },
+  "CVE-2021-23337": {
+    "package": "lodash",
+    "severity": "HIGH",
+    "description": "Template injection vulnerability in lodash",
+    "cvss_score": 7.2,
+    "ecosystem": "npm/JavaScript",
+    "category": "Transitive impact"
+  },
+  "CVE-2021-23336": {
+    "package": "urllib3",
+    "severity": "MEDIUM",
+    "description": "CRLF injection in urllib3 via HTTP request smuggling",
+    "cvss_score": 5.9,
+    "ecosystem": "PyPI/Python",
+    "category": "Core networking library"
+  },
+  "CVE-2019-11324": {
+    "package": "urllib3",
+    "severity": "MEDIUM",
+    "description": "Certificate validation bypass via redirect in urllib3",
+    "cvss_score": 6.5,
+    "ecosystem": "PyPI/Python",
+    "category": "Core networking library"
+  },
+  "CVE-2022-42969": {
+    "package": "pip",
+    "severity": "HIGH",
+    "description": "Dependency confusion attack vector in pip",
+    "cvss_score": 8.8,
+    "ecosystem": "PyPI/Python",
+    "category": "Supply chain attack"
+  },
+  "CVE-2017-5638": {
+    "package": "struts2-core",
+    "severity": "CRITICAL",
+    "description": "Apache Struts RCE via Content-Type header (Equifax breach)",
+    "cvss_score": 10.0,
+    "ecosystem": "Maven/Java",
+    "category": "Enterprise dependency tree"
+  },
+  "CVE-2018-11776": {
+    "package": "struts2-core",
+    "severity": "CRITICAL",
+    "description": "Apache Struts RCE via namespace manipulation",
+    "cvss_score": 9.8,
+    "ecosystem": "Maven/Java",
+    "category": "Enterprise dependency tree"
+  },
+  "CVE-2020-17530": {
+    "package": "struts2-core",
+    "severity": "CRITICAL",
+    "description": "Apache Struts OGNL injection leading to RCE",
+    "cvss_score": 9.8,
+    "ecosystem": "Maven/Java",
+    "category": "Enterprise dependency tree"
+  },
+  "CVE-2022-22965": {
+    "package": "spring-beans",
+    "severity": "CRITICAL",
+    "description": "Spring4Shell - RCE via class loader manipulation",
+    "cvss_score": 9.8,
+    "ecosystem": "Maven/Java",
+    "category": "Widely embedded library"
+  },
+  "CVE-2019-10744": {
+    "package": "jquery",
+    "severity": "MEDIUM",
+    "description": "XSS vulnerability in jQuery via prototype pollution",
+    "cvss_score": 6.1,
+    "ecosystem": "npm/JavaScript",
+    "category": "Widely embedded library"
+  },
+  "CVE-2020-28469": {
+    "package": "xml2js",
+    "severity": "HIGH",
+    "description": "Prototype pollution in xml2js XML parsing library",
+    "cvss_score": 7.5,
+    "ecosystem": "npm/JavaScript",
+    "category": "Widely embedded library"
+  },
+  "CVE-2023-30861": {
+    "package": "flask",
+    "severity": "HIGH",
+    "description": "Cookie parsing vulnerability in Flask web framework",
+    "cvss_score": 7.5,
+    "ecosystem": "PyPI/Python",
+    "category": "Web framework"
+  },
+  "CVE-2023-32681": {
+    "package": "requests",
+    "severity": "MEDIUM",
+    "description": "Proxy authentication leak in requests library",
+    "cvss_score": 6.1,
+    "ecosystem": "PyPI/Python",
+    "category": "HTTP library"
+  },
+  "CVE-2023-36053": {
+    "package": "django",
+    "severity": "HIGH",
+    "description": "Potential ReDoS in email validation in Django",
+    "cvss_score": 7.5,
+    "ecosystem": "PyPI/Python",
+    "category": "Web framework"
+  },
+  "CVE-2019-11358": {
+    "package": "jquery",
+    "severity": "MEDIUM",
+    "description": "Prototype pollution in jQuery extend function",
+    "cvss_score": 6.1,
+    "ecosystem": "npm/JavaScript",
+    "category": "Frontend library"
+  },
+  "CVE-2023-0842": {
+    "package": "xml2js",
+    "severity": "HIGH",
+    "description": "Prototype pollution vulnerability in xml2js",
+    "cvss_score": 7.5,
+    "ecosystem": "npm/JavaScript",
+    "category": "XML parsing library"
+  }
+}

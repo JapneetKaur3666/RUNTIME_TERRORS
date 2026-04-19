@@ -1,0 +1,216 @@
+{
+  "web_app_project": {
+    "nodes": {
+      "flask": {"type": "critical", "version": "2.0.1"},
+      "werkzeug": {"type": "critical", "version": "2.0.1"},
+      "jinja2": {"type": "critical", "version": "3.0.1"},
+      "click": {"type": "medium", "version": "8.0.1"},
+      "itsdangerous": {"type": "medium", "version": "2.0.1"},
+      "markupsafe": {"type": "medium", "version": "2.0.1"},
+      "requests": {"type": "critical", "version": "2.28.0"},
+      "urllib3": {"type": "critical", "version": "1.26.5"},
+      "certifi": {"type": "medium", "version": "2021.5.30"},
+      "charset-normalizer": {"type": "low", "version": "2.0.4"},
+      "idna": {"type": "low", "version": "3.2"}
+    },
+    "edges": {
+      "flask": ["werkzeug", "jinja2", "click", "itsdangerous"],
+      "werkzeug": ["markupsafe"],
+      "jinja2": ["markupsafe"],
+      "click": [],
+      "itsdangerous": [],
+      "markupsafe": [],
+      "requests": ["urllib3", "certifi", "charset-normalizer", "idna"],
+      "urllib3": [],
+      "certifi": [],
+      "charset-normalizer": [],
+      "idna": []
+    }
+  },
+  "data_science_project": {
+    "nodes": {
+      "pandas": {"type": "critical", "version": "1.3.0"},
+      "numpy": {"type": "critical", "version": "1.21.0"},
+      "python-dateutil": {"type": "medium", "version": "2.8.2"},
+      "pytz": {"type": "medium", "version": "2021.1"},
+      "six": {"type": "low", "version": "1.16.0"},
+      "matplotlib": {"type": "medium", "version": "3.4.2"},
+      "pillow": {"type": "medium", "version": "8.3.1"},
+      "cycler": {"type": "low", "version": "0.10.0"},
+      "kiwisolver": {"type": "low", "version": "1.3.1"}
+    },
+    "edges": {
+      "pandas": ["numpy", "python-dateutil", "pytz"],
+      "numpy": [],
+      "python-dateutil": ["six"],
+      "pytz": [],
+      "six": [],
+      "matplotlib": ["numpy", "pillow", "cycler", "kiwisolver", "python-dateutil"],
+      "pillow": [],
+      "cycler": ["six"],
+      "kiwisolver": []
+    }
+  },
+  "api_project": {
+    "nodes": {
+      "fastapi": {"type": "critical", "version": "0.68.0"},
+      "starlette": {"type": "critical", "version": "0.14.2"},
+      "pydantic": {"type": "critical", "version": "1.8.2"},
+      "anyio": {"type": "medium", "version": "3.3.0"},
+      "typing-extensions": {"type": "low", "version": "3.10.0"},
+      "sniffio": {"type": "low", "version": "1.2.0"},
+      "idna": {"type": "low", "version": "3.2"},
+      "uvicorn": {"type": "critical", "version": "0.15.0"},
+      "click": {"type": "medium", "version": "8.0.1"},
+      "h11": {"type": "medium", "version": "0.12.0"}
+    },
+    "edges": {
+      "fastapi": ["starlette", "pydantic"],
+      "starlette": ["anyio"],
+      "pydantic": ["typing-extensions"],
+      "anyio": ["idna", "sniffio"],
+      "typing-extensions": [],
+      "sniffio": [],
+      "idna": [],
+      "uvicorn": ["click", "h11"],
+      "click": [],
+      "h11": []
+    }
+  },
+  "django_project": {
+    "nodes": {
+      "django": {"type": "critical", "version": "3.2.5"},
+      "sqlparse": {"type": "medium", "version": "0.4.1"},
+      "asgiref": {"type": "medium", "version": "3.4.1"},
+      "pytz": {"type": "medium", "version": "2021.1"},
+      "psycopg2": {"type": "critical", "version": "2.9.1"},
+      "celery": {"type": "medium", "version": "5.1.2"},
+      "kombu": {"type": "medium", "version": "5.1.0"},
+      "amqp": {"type": "low", "version": "5.0.6"},
+      "vine": {"type": "low", "version": "5.0.0"}
+    },
+    "edges": {
+      "django": ["sqlparse", "asgiref", "pytz"],
+      "sqlparse": [],
+      "asgiref": [],
+      "pytz": [],
+      "psycopg2": [],
+      "celery": ["kombu"],
+      "kombu": ["amqp", "vine"],
+      "amqp": ["vine"],
+      "vine": []
+    }
+  },
+  "java_enterprise_project": {
+    "nodes": {
+      "spring-boot-starter-web": {"type": "critical", "version": "2.6.6"},
+      "spring-beans": {"type": "critical", "version": "5.3.18"},
+      "spring-core": {"type": "critical", "version": "5.3.18"},
+      "spring-context": {"type": "critical", "version": "5.3.18"},
+      "struts2-core": {"type": "critical", "version": "2.5.26"},
+      "log4j-core": {"type": "critical", "version": "2.14.1"},
+      "log4j-api": {"type": "critical", "version": "2.14.1"},
+      "commons-logging": {"type": "medium", "version": "1.2"},
+      "slf4j-api": {"type": "medium", "version": "1.7.32"},
+      "jackson-databind": {"type": "medium", "version": "2.13.2"},
+      "tomcat-embed-core": {"type": "medium", "version": "9.0.60"}
+    },
+    "edges": {
+      "spring-boot-starter-web": ["spring-beans", "spring-core", "spring-context", "tomcat-embed-core"],
+      "spring-beans": ["spring-core"],
+      "spring-core": ["commons-logging"],
+      "spring-context": ["spring-beans", "spring-core"],
+      "struts2-core": ["commons-logging", "log4j-api"],
+      "log4j-core": ["log4j-api"],
+      "log4j-api": [],
+      "commons-logging": [],
+      "slf4j-api": [],
+      "jackson-databind": [],
+      "tomcat-embed-core": []
+    }
+  },
+  "nodejs_webapp_project": {
+    "nodes": {
+      "express": {"type": "critical", "version": "4.17.1"},
+      "lodash": {"type": "critical", "version": "4.17.19"},
+      "jquery": {"type": "critical", "version": "3.4.1"},
+      "xml2js": {"type": "medium", "version": "0.4.23"},
+      "body-parser": {"type": "medium", "version": "1.19.0"},
+      "cookie-parser": {"type": "medium", "version": "1.4.5"},
+      "morgan": {"type": "low", "version": "1.10.0"},
+      "debug": {"type": "low", "version": "2.6.9"},
+      "ms": {"type": "low", "version": "2.0.0"},
+      "sax": {"type": "low", "version": "1.2.4"},
+      "xmlbuilder": {"type": "low", "version": "11.0.1"}
+    },
+    "edges": {
+      "express": ["body-parser", "cookie-parser", "morgan", "debug"],
+      "lodash": [],
+      "jquery": [],
+      "xml2js": ["sax", "xmlbuilder"],
+      "body-parser": [],
+      "cookie-parser": [],
+      "morgan": ["debug"],
+      "debug": ["ms"],
+      "ms": [],
+      "sax": [],
+      "xmlbuilder": []
+    }
+  },
+  "python_data_pipeline": {
+    "nodes": {
+      "requests": {"type": "critical", "version": "2.28.0"},
+      "urllib3": {"type": "critical", "version": "1.26.5"},
+      "pip": {"type": "critical", "version": "21.3.1"},
+      "setuptools": {"type": "critical", "version": "58.0.4"},
+      "certifi": {"type": "medium", "version": "2021.5.30"},
+      "charset-normalizer": {"type": "low", "version": "2.0.4"},
+      "idna": {"type": "low", "version": "3.2"}
+    },
+    "edges": {
+      "requests": ["urllib3", "certifi", "charset-normalizer", "idna"],
+      "urllib3": [],
+      "pip": ["setuptools"],
+      "setuptools": [],
+      "certifi": [],
+      "charset-normalizer": [],
+      "idna": []
+    }
+  },
+  "comprehensive_app": {
+    "nodes": {
+      "main-app": {"type": "critical", "version": "1.0.0"},
+      "urllib3": {"type": "critical", "version": "1.26.5"},
+      "requests": {"type": "critical", "version": "2.28.0"},
+      "flask": {"type": "critical", "version": "2.0.1"},
+      "werkzeug": {"type": "medium", "version": "2.0.1"},
+      "jinja2": {"type": "medium", "version": "3.0.1"},
+      "certifi": {"type": "medium", "version": "2021.5.30"},
+      "click": {"type": "medium", "version": "8.0.1"},
+      "itsdangerous": {"type": "low", "version": "2.0.1"},
+      "markupsafe": {"type": "low", "version": "2.0.1"},
+      "charset-normalizer": {"type": "low", "version": "2.0.4"},
+      "idna": {"type": "low", "version": "3.2"},
+      "six": {"type": "low", "version": "1.16.0"},
+      "colorama": {"type": "low", "version": "0.4.4"},
+      "pytz": {"type": "low", "version": "2021.1"}
+    },
+    "edges": {
+      "main-app": ["urllib3", "requests", "flask"],
+      "urllib3": ["certifi", "charset-normalizer"],
+      "requests": ["urllib3", "certifi", "charset-normalizer", "idna"],
+      "flask": ["werkzeug", "jinja2", "click", "itsdangerous"],
+      "werkzeug": ["markupsafe"],
+      "jinja2": ["markupsafe"],
+      "click": ["colorama"],
+      "itsdangerous": [],
+      "markupsafe": [],
+      "certifi": [],
+      "charset-normalizer": [],
+      "idna": [],
+      "six": [],
+      "colorama": [],
+      "pytz": []
+    }
+  }
+}
